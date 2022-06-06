@@ -1,0 +1,27 @@
+OrdererOrgs:
+ 
+  - Name: Orderer
+    Domain: drm.com
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: orderer1
+      - Hostname: orderer2
+      - Hostname: orderer3
+PeerOrgs:
+
+  - Name: Org1
+    Domain: org1.drm.com
+    EnableNodeOUs: true
+  
+    Template:
+      Count: 2
+    Users:
+      Count: 2
+  
+  - Name: Org2
+    Domain: org2.drm.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 2
